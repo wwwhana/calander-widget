@@ -1,0 +1,29 @@
+name: macOS Build
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Build app
+        run: ./build-app.sh
+
+      - name: Package app
+        run: ditto -c -k --sequesterRsrc --keepParent Build/CalendarPeek.app CalendarPeek-macos-arm64.zip
+
+      - name: Upload app artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: CalendarPeek-macos-arm64
+          path: CalendarPeek-macos-arm64.zip
+          if-no-files-found: error
