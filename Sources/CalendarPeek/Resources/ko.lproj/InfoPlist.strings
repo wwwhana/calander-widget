@@ -1,0 +1,4 @@
+"CFBundleDisplayName" = "캘린더 픽";
+"NSCalendarsFullAccessUsageDescription" = "메뉴 막대에 일정을 표시하기 위해 캘린더를 읽습니다.";
+"NSCalendarsUsageDescription" = "메뉴 막대에 일정을 표시하기 위해 캘린더를 읽습니다.";
+"NSAppleEventsUsageDescription" = "선택한 일정을 캘린더에서 열기 위해 캘린더 앱을 제어합니다.";

@@ -1,0 +1,4 @@
+"CFBundleDisplayName" = "Calendar Peek";
+"NSCalendarsFullAccessUsageDescription" = "Calendar Peek reads your calendars to show your schedule in the menu bar.";
+"NSCalendarsUsageDescription" = "Calendar Peek reads your calendars to show your schedule in the menu bar.";
+"NSAppleEventsUsageDescription" = "Calendar Peek opens the event you select in Calendar.";
